@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>加密网页</title>
+    <script src="http://cdn.bootcdn.net/ajax/libs/crypto-js/4.0.0/crypto-js.js"></script>
+</head>
+
+<body>
+    <h1>aes加密</h1>
+    <label for="ciphertext">明文:</label>
+    <textarea type="text" id="ciphertext" name="ciphertext"></textarea><br><br>
+    <label for="cipherkey">密码:</label>
+    <input type="text" id="cipherkey" name="cipherkey"><br><br>
+    <button id="encrypt">加密</button><br><br>
+    <button id="generatehtml">生成加密网页</button><br><br>
+    <code id="cyphertextresult"></code>
+
+    <h1>aes解密</h1>
+    <label for="cyphertext">密文:</label>
+    <textarea type="text" id="cyphertext" name="cyphertext"></textarea><br><br>
+    <label for="cypherkey">密码:</label>
+    <input type="text" id="cypherkey" name="cypherkey"><br><br>
+    <button id="decrypt">解密</button><br><br>
+    <code id="ciphertextresult"></code>
+</body>
+<script src="app.js"></script>
+
+</html>
